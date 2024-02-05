@@ -52,4 +52,4 @@ Para descargar la solución desde un respositorio de Docker Hub se necesita segu
 
 `docker run -p 8145:8145 --name notas cgarciar29/backend-notas`
 
-
+Revisar la colección para la prueba de consumo de servicios de la solución presentada.
