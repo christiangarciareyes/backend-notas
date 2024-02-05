@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "421f2928-3201-4290-a3f3-2f2d979ed7c1",
+		"name": "UTP Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3571843"
+	},
+	"item": [
+		{
+			"name": "Crear Nota",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcwOTY5NDUxMCwibm9tYnJlIjoiQ2hyaXN0aWFuIn0.aR5-jVwKtoCSoQKgeKWBIIEbGI-GxE-cAZ1k4ttWrCY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Titulo 1\",\r\n    \"contenido\": \"Contenido 1\",\r\n    \"idUsuario\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8145/notas/api/notas"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Notas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcwOTY5NDUxMCwibm9tYnJlIjoiQ2hyaXN0aWFuIn0.aR5-jVwKtoCSoQKgeKWBIIEbGI-GxE-cAZ1k4ttWrCY",
+						"type": "text"
+					}
+				],
+				"url": "localhost:8145/notas/api/notas"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8145/notas/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger API Docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8145/notas/v2/api-docs"
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger UI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8145/notas/swagger-ui/index.html"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcwOTY5NDUxMCwibm9tYnJlIjoiQ2hyaXN0aWFuIn0.aR5-jVwKtoCSoQKgeKWBIIEbGI-GxE-cAZ1k4ttWrCY",
+						"type": "text"
+					}
+				],
+				"url": "localhost:8145/notas/api/usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Notas x Usuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcwOTY5NDUxMCwibm9tYnJlIjoiQ2hyaXN0aWFuIn0.aR5-jVwKtoCSoQKgeKWBIIEbGI-GxE-cAZ1k4ttWrCY",
+						"type": "text"
+					}
+				],
+				"url": "localhost:8145/notas/api/usuarios/1"
+			},
+			"response": []
+		}
+	]
+}
