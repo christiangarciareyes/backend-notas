@@ -2,6 +2,9 @@
 
 Este proyecto esta generado con Java 1.8 y Sprong Boot 2.7.16. Para desplegar la solución se siguieron los pasos que se detallan a continuación:
 
+Repositorio GitHub: https://github.com/christiangarciareyes/backend-notas/tree/master
+Repositorio Docker Hub: https://hub.docker.com/r/cgarciar29/backend-notas
+
 # 1. Generar artefecto Java
 
 `mvn clean install -DskipTests`
@@ -39,8 +42,6 @@ Para subir la solución a un respositorio de Docker Hub se necesita seguir con l
 # 4. Imagen subido a respositorio correctamente
 
 Para descargar la solución desde un respositorio de Docker Hub se necesita seguir con los pasos que se detallan a continuación:
-
-https://hub.docker.com/r/cgarciar29/backend-notas
 
 # 1. Descargar imagen de contenedor público
 
